@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.0.20/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.onscroll = () => {
+        const nav = document.getElementById("navbar");
+        if (scrollY >= 450) {
+          nav?.classList.add("scroll");
+        } else {
+          nav?.classList.remove("scroll");
+        }
+      };
+    </script>
+    <title>Aditya's Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar" class="navbar flex justify-center z-10">
+      <div class="w-[1200px]">
+        <div class="flex-1">
+          <a href="#home" class="btn btn-ghost normal-case text-xl text-white"
+            >Aditya's Portfolio</a
+          >
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <a href="#experience" class="btn btn-ghost normal-case text-white"
+              >Experience</a
+            >
+            <a href="#projects" class="btn btn-ghost normal-case text-white"
+              >Projects</a
+            >
+            <a href="#education" class="btn btn-ghost normal-case text-white"
+              >Education</a
+            >
+            <a href="#skills" class="btn btn-ghost normal-case text-white"
+              >Skills</a
+            >
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full bg-no-repeat bg-cover bg-center h-[480px] banner">
+      <div id="home">
+        <div class="flex justify-center">
+          <img
+            width="180"
+            class="rounded-full mt-28"
+            src="https://cdn-icons-png.flaticon.com/512/428/428933.png"
+            alt=""
+          />
+        </div>
+        <h1 class="mt-10 text-center font-bold text-4xl text-white">
+          Aditya Borikar
+        </h1>
+        <h1 class="mt-3 text-center font-normal text-xl text-white">
+          Software Developer
+        </h1>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="flex justify-center">
+      <div class="w-[1200px]">
+        <h1
+          id="experience"
+          class="text-center text-4xl h-40 pt-16 font-semibold"
+        >
+          Experience
+        </h1>
+        <ol class="border-l border-neutral-700">
+          <li>
+            <div class="flex-start flex items-center pt-3">
+              <div
+                class="-ml-[8px] mr-3 h-[15px] w-[15px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+              ></div>
+              <h1 class="text-2xl font-bold">Claim Genius Inc.</h1>
+            </div>
+            <div class="mt-2 ml-4 mb-6">
+              <div class="flex items-baseline">
+                <h2 class="text-xl font-semibold">Jr. Software Developer</h2>
+                <span class="text-gray-400 ml-5">Jul 2022 - Present</span>
+              </div>
+              <p class="mb-3">
+                Working on agile project inside a team to have constant
+                collaboration with key stakeholders to provide
+                technical/functional assistance identifying, evaluating &
+                developing systems and procedures that are cost effective and
+                meet user requirements.
+              </p>
+              <ul>
+                <li class="ml-5 list-disc">
+                  ETL Process - Prepared Meta & Data Info for vehicle database
+                  using MS Excel and PostgreSQL.
+                </li>
+                <li class="ml-5 list-disc">
+                  Developed and modified existing services using Node.Js.
+                </li>
+                <li class="ml-5 list-disc">
+                  Developed/Build UI for some utilities used for importing data
+                  using VueJs.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-2 ml-4 mb-6">
+              <div class="flex items-baseline">
+                <h2 class="text-xl font-semibold">
+                  Traniee Software Developer
+                </h2>
+                <span class="text-gray-400 ml-5">Sept 2021 - Jun 2022</span>
+              </div>
+              <p class="mb-3">
+                Underwent 4 months training on Frontend and Backend with
+                technologies including HTML/CSS, Javascript, Typescript, NodeJS,
+                PostgreSQL and VueJS.
+              </p>
+              <ul>
+                <li class="ml-5 text-xl font-semibold">Projects :</li>
+                <li class="ml-5 font-semibold">
+                  Employee Registration Portal(Frontend Developer - VueJS) :
+                </li>
+                <span class="ml-5"
+                  >The requirement for this project was to create a UI for
+                  Employee Registration, and the list registered employee to be
+                  displayed.</span
+                >
+                <li class="ml-5 font-semibold">
+                  User CRUD Operation (Backend Developer - NestJS) :
+                </li>
+                <span class="ml-5"
+                  >The requirement of the project was to create APIs to create,
+                  read, update and delete a user. The technologies used was
+                  NestJS with Prisma ORM.</span
+                >
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="flex-start flex items-center pt-3">
+              <div
+                class="-ml-[8px] mr-3 h-[15px] w-[15px] rounded-full bg-neutral-300 dark:bg-neutral-500"
+              ></div>
+              <h1 class="text-2xl font-bold">HERE Technologies</h1>
+            </div>
+            <div class="mt-2 ml-4 mb-6">
+              <div class="flex items-baseline">
+                <h2 class="text-xl font-semibold">Intern</h2>
+                <span class="text-gray-400 ml-5">Jun 2020 - Jan 2021</span>
+              </div>
+              <p class="mb-3">
+                Contribution in Map improvement in HERE Map Creator Tool.
+              </p>
+              <ul>
+                <li class="ml-5 list-disc">
+                  Added new POIs(Places of Intrest) on HERE Maps.
+                </li>
+                <li class="ml-5 list-disc">Added new roads on HERE Maps.</li>
+                <p class="mb-3 mt-2">
+                  Map Champion of Student Community Program.
+                </p>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- PROJECT -->
+    <div class="flex justify-center">
+      <div class="w-[1200px]">
+        <h1
+          id="projects"
+          class="text-center text-4xl h-40 pt-16 font-semibold p-10"
+        >
+          Projects
+        </h1>
+        <div class="flex justify-evenly">
+          <div class="card w-96 bg-[#f0f0c9] shadow-lg">
+            <div class="card-body">
+              <h2 class="card-title text-2xl">Nayzak</h2>
+              <div class="flex items-center">
+                <h4 class="text-lg font-semibold">Technology:</h4>
+                <span class="ml-3">Vue3, Tailwind CSS</span>
+              </div>
+              <p>
+                I found this template on the internet (figma.com) and tried to
+                replicate it.
+              </p>
+              <div class="flex justify-center">
+                <img
+                  width="30"
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png"
+                  alt=""
+                />
+                <a
+                  class="flex items-center ml-3 hover:text-lg"
+                  href="https://github.com/adityaborikar/Nayzak"
+                  target="_blank"
+                  >Go to Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-[#f0f0c9] shadow-lg">
+            <div class="card-body">
+              <h2 class="card-title text-2xl">CRUD Operation</h2>
+              <div class="flex items-center">
+                <h4 class="text-lg font-semibold">Technology:</h4>
+                <span class="ml-3">Vue3, NestJS, Prisma ORM, PostgreSQL</span>
+              </div>
+              <p>
+                A project that can create APIs to create, read, update, and
+                delete a user.
+              </p>
+              <div class="flex justify-center">
+                <img
+                  width="30"
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png"
+                  alt=""
+                />
+                <a
+                  class="flex items-center ml-3 hover:text-lg"
+                  href="https://github.com/adityaborikar/CRUD-operation"
+                  target="_blank"
+                  >Go to Github</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card w-96 bg-[#f0f0c9] shadow-lg">
+            <div class="card-body">
+              <h2 class="card-title text-2xl">Vehicle Coverage</h2>
+              <div class="flex items-center">
+                <h4 class="text-lg font-semibold">Technology:</h4>
+                <span class="ml-3">Vue3, NestJS, Prisma ORM, PostgreSQL</span>
+              </div>
+              <p>
+                A project that shows vehicle coverage of data in a database with
+                features like dynamic search and pagination.
+              </p>
+              <div class="flex justify-center">
+                <img
+                  width="30"
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png"
+                  alt=""
+                />
+                <a
+                  class="flex items-center ml-3 hover:text-lg"
+                  href="https://github.com/adityaborikar/Vehicle-Coverage"
+                  target="_blank"
+                  >Go to Github</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="flex justify-center">
+      <div class="w-[1200px]">
+        <h1
+          id="education"
+          class="text-center text-4xl h-40 pt-16 font-semibold p-10"
+        >
+          Education
+        </h1>
+        <div class="card card-side rounded-lg bg-base-100 shadow-lg">
+          <div
+            class="flex justify-center items-center flex-col bg-[#124e78] p-5 rounded-tl-lg rounded-bl-lg w-72"
+          >
+            <h1 class="text-xl font-medium text-white">
+              Bachelors in Engineering
+            </h1>
+            <span class="text-white">2021</span>
+          </div>
+          <div class="card-body bg-[#f0f0c9] rounded-r-lg">
+            <h2 class="card-title">
+              Yashwantrao Chavan College of Engineering, Nagpur
+            </h2>
+            <ul>
+              <li class="list-disc ml-5">
+                YCCE is an Autonomous Institute Affiliated to RTMNU
+              </li>
+              <li class="list-disc ml-5">
+                Completed my B.E in Information Technology with 6.4 CGPA
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card-side rounded-lg bg-base-100 shadow-lg mt-10">
+          <div
+            class="flex justify-center items-center flex-col bg-[#124e78] p-5 rounded-tl-lg rounded-bl-lg w-72"
+          >
+            <h1 class="text-xl font-medium text-white">Diploma</h1>
+            <span class="text-white">2018</span>
+          </div>
+          <div class="card-body bg-[#f0f0c9] rounded-r-lg">
+            <h2 class="card-title">Dr. D. Y. Patil Polytechnic, Nerul</h2>
+            <ul>
+              <li class="list-disc ml-5">
+                D Y Patil was Affiliated College of Maharashtra State Board of
+                Technical Education
+              </li>
+              <li class="list-disc ml-5">
+                Completed my Diploma in Computer Engineering with 67.67%
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card card-side rounded-lg bg-base-100 shadow-lg mt-10">
+          <div
+            class="flex justify-center items-center flex-col bg-[#124e78] p-5 rounded-tl-lg rounded-bl-lg w-72"
+          >
+            <h1 class="text-center text-xl font-medium text-white">
+              Secondary School Certificate
+            </h1>
+            <span class="text-white">2014</span>
+          </div>
+          <div class="card-body bg-[#f0f0c9] rounded-r-lg round-rb-lg">
+            <h2 class="card-title">Vimaltai Tidke Convent, Nagpur</h2>
+            <ul>
+              <li class="list-disc ml-5">State Board</li>
+              <li class="list-disc ml-5">Completed my SSC with 70.04%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <h1 id="skills" class="text-center text-4xl h-40 pt-16 font-semibold p-10">
+      Skills
+    </h1>
+    <div class="flex justify-evenly mb-20">
+      <div>
+        <div>
+          <div class="w-[400px]">
+            <div class="flex justify-between">
+              <span>Vue JS</span>
+              <span>75%</span>
+            </div>
+          </div>
+          <progress class="progress w-[400px]" value="75" max="100"></progress>
+        </div>
+        <div>
+          <div class="w-[400px]">
+            <div class="flex justify-between">
+              <span>Node JS, Javascript/Typescript</span>
+              <span>50%</span>
+            </div>
+          </div>
+          <progress class="progress w-[400px]" value="50" max="100"></progress>
+        </div>
+        <div>
+          <div class="w-[400px]">
+            <div class="flex justify-between">
+              <span>HTML, CSS, Tailwind</span>
+              <span>80%</span>
+            </div>
+          </div>
+          <progress class="progress w-[400px]" value="80" max="100"></progress>
+        </div>
+      </div>
+      <div>
+        <div>
+          <div class="w-[400px]">
+            <div class="flex justify-between">
+              <span>Bitbucket, Jira, Confluence, Git</span>
+              <span>75%</span>
+            </div>
+          </div>
+          <progress class="progress w-[400px]" value="75" max="100"></progress>
+        </div>
+        <div>
+          <div class="w-[400px]">
+            <div class="flex justify-between">
+              <span>PostgreSQL, Postman</span>
+              <span>75%</span>
+            </div>
+          </div>
+          <progress class="progress w-[400px]" value="75" max="100"></progress>
+        </div>
+        <div>
+          <div class="w-[400px]">
+            <div class="flex justify-between">
+              <span>MS Excel & MS Powerpoint</span>
+              <span>65%</span>
+            </div>
+          </div>
+          <progress class="progress w-[400px]" value="65" max="100"></progress>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="bg-gray-300 p-5">
+      <div class="flex justify-center">
+        <div class="w-[1200px]">
+          <div class="text-center p-3">
+            <p class="text-2xl font-semibold">Aditya Borikar</p>
+            <span>Software Developer</span>
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <a href="https://twitter.com/__adityaa24" target="_blank">
+                <img
+                  width="25"
+                  src="https://cdn-icons-png.flaticon.com/512/739/739257.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/in/aditya-borikar-a3492020a/"
+                target="_blank"
+              >
+                <img
+                  class="mr-7 ml-7"
+                  width="25"
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111723.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a href="https://github.com/adityaborikar" target="_blank">
+                <img
+                  width="25"
+                  src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <p class="font-semibold mt-5">&copy All rights reserved.</p>
+            <span class="font-semibold">Developed by Aditya Borikar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
